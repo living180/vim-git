@@ -24,7 +24,7 @@ if exists("g:git_comment_char")
   else
     let s:comment_char = g:git_comment_char
   endif
-  if s:comment_char == '\\' || s:comment_char == '^'
+  if s:comment_char == '\\' || s:comment_char == '^' || s:comment_char == ']'
     let s:comment_char = '\' . s:comment_char
   endif
 else
